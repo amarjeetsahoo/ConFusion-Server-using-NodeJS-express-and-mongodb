@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
+
 var leaderSchema = new Schema({
     name: {
         type: String,
