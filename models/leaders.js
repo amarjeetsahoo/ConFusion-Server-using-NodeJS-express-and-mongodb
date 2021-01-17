@@ -24,9 +24,9 @@ var leaderSchema = new Schema({
         required: true
     },
     featured: {
-      type: Boolean,
-      required: false
-  }
+        type: Boolean,
+        required: false
+    }
 }, {
     timestamps: true
 });
