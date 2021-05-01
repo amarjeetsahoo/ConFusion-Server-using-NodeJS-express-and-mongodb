@@ -10,6 +10,7 @@ router.get('/', function (req, res, next) {
   res.send('respond with a resource');
 });
 
+// sign up process
 router.post('/signup', (req, res, next) => {
   User.findOne({ username: req.body.username })
     .then((user) => {
@@ -33,6 +34,7 @@ router.post('/signup', (req, res, next) => {
     .catch((err) => next(err));
 });
 
+// login process 
 router.post('/login', (req, res, next) => {
 
   if (!req.session.user) {
