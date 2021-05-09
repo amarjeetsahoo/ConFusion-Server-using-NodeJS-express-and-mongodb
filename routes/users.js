@@ -43,7 +43,7 @@ router.post('/signup', (req, res, next) => {
     });
 });
 
-// login process 
+// login 
 router.post('/login', passport.authenticate('local'), (req, res) => {
   var token = authenticate.getToken({ _id: req.user._id });
   res.statusCode = 200;
